@@ -7,7 +7,7 @@ test your web orchestration. It's small enough to fit on one floppy disk:
 ```bash
 $ docker images | grep hell
 REPOSITORY               TAG       IMAGE ID        CREATED          VIRTUAL SIZE
-crccheck/hello-world     latest    2b28c6ad8d1b    4 months ago     1.13MB
+tomma/helloworld     latest    2b28c6ad8d1b        3 hours     1.13MB
 ```
 
 
@@ -17,7 +17,7 @@ Sample Usage
 ### Starting a web server on port 80
 
 ```bash
-$ docker run -d --name web-test -p 80:8000 crccheck/hello-world
+$ docker run -d --name web-test -p 80:8000 tomma/helloworld
 ```
 
 You can now interact with this as if it were a dumb web server:
